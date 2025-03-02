@@ -304,7 +304,7 @@ def handle_bgmi(message):
                     start_bgmi_reply(message, target, port, time)
 
                     # Simulate bgmi process
-                    full_command = f"./Rahul {target} {port} {time} 500"
+                    full_command = f"./Rahul {target} {port} {time} 1200"
                     subprocess.run(full_command, shell=True)
 
                     response = "bgmi completed successfully."
